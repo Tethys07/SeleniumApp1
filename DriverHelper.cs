@@ -7,8 +7,19 @@ namespace SeleniumApp1
 {
     public class DriverHelper
     {
-        public IWebDriver driver;
-        public IWebElement element;
+        public static IWebDriver driver { get; set; }
+        public static IWebElement element { get; set; }
     
     }
+
+    public enum SelectorType
+    {
+        Id,
+        Name,
+        LinkText,
+        CssName,
+        ClassName
+    }
+
+
 }
