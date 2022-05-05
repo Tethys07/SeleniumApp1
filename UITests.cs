@@ -8,7 +8,7 @@ namespace SeleniumApp1
 {
     
     [TestFixture]
-    public class Tests : DriverHelper
+    public class UITests : DriverHelper
     {
         [SetUp]
         public void Setup()
@@ -81,6 +81,8 @@ namespace SeleniumApp1
             Assert.Pass();
 
         }
+
+        
 
 
 
