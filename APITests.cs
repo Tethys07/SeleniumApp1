@@ -21,7 +21,8 @@ namespace SeleniumApp1
 
             Assert.AreEqual(26, animals.entries.Length);
             Assert.AreEqual(26, animals.count);
-
+            //JsonDocument.Parse not needed since we have model/properties
+            Assert.AreEqual("Axolotl", animals.entries[1].API);
 
         }
 
