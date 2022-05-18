@@ -7,8 +7,8 @@ namespace SeleniumApp1
 {
     public class DriverHelper
     {
-        public static IWebDriver driver { get; set; }
-        public static IWebElement element { get; set; }
+        public static IWebDriver? driver { get; set; }
+        public static IWebElement? element { get; set; }
     
     }
 
