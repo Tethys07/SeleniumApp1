@@ -28,5 +28,7 @@ namespace SeleniumApp1
         public bool VerifySearchPage() => search.Displayed;
 
 
+
+
     }
 }

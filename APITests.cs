@@ -27,5 +27,42 @@ namespace SeleniumApp1
             }
         }
 
+
+        public async Task APITest2()
+        {
+            TestAPI testAPI = new TestAPI();
+            Animals animal;
+
+            var response = await testAPI.testRequest();
+
+            animal = JsonSerializer.Deserialize<Animals>(response);
+            Assert.AreEqual("Bear", animal.entries[2].API);
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
 }

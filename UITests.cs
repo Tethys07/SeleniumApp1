@@ -82,10 +82,15 @@ namespace SeleniumApp1
 
         }
 
-        
+        [Test]
+        public void GoogleTest2()
+        {
+            driver.Navigate().GoToUrl("https://google.com");
+            GooglePageObject g = new GooglePageObject();
+            g.search.SendKeys("Automation");
+            Assert.IsTrue(g.VerifySearchPage());
 
-
-
+        }
 
     }
 }
