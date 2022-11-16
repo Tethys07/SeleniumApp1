@@ -1,11 +1,13 @@
-﻿namespace SeleniumApp1
+﻿using System.Collections.ObjectModel;
+
+namespace SeleniumApp1.API.Models
 {
 
     public class Animals
     {
-        public int count { get; set; }
-        public Entry[] entries { get; set; }
-        
+        public int? Count { get; init; }
+        public Collection<Entry>? Entry { get; init; }
+
 
     }
 
